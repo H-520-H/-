@@ -52,4 +52,52 @@ Vmamba
 <img width="919" height="272" alt="image" src="https://github.com/user-attachments/assets/2e7106b7-30a4-46e7-9c32-c38273a116da" />
 
 ### ③https://arxiv.org/pdf/2303.01803
+## 7.UniRepLKNet: A Universal Perception Large-Kernel ConvNet for Audio, Video, Point Cloud, Time-Series and Image Recognition（2024 CVPR）
+### ①contributions
+用于大核CNN架构设计的四条guideline，一种名为UniRepLKNet的强力backbone（只用ImageNet-22K预训练，精度和速度SOTA，ImageNet达到88%, COCO达到56.4 box AP，ADE20K达到55.6 mIoU，实际测速优势很大），在时序预测的超大数据上用这一为图像设计的backbone达到SOTA水平（全球气温和风速预测，前SOTA是发在Nature子刊上专门为此设计的Transformer），在点云、音频、视频上凭着极为简单的预处理方式和毫无改变的模型结构均超过或接近SOTA水平。
+### ②method
+<img width="499" height="533" alt="image" src="https://github.com/user-attachments/assets/e6e5f45b-4114-41ae-920b-c59f9cdb6510" />
+<img width="1054" height="269" alt="image" src="https://github.com/user-attachments/assets/944cebe6-ae21-4bea-b1d0-568299654d59" />
 
+### ③https://github.com/AILab-CVC/UniRepLKNet
+### ④https://zhuanlan.zhihu.com/p/669527907（作者解读）
+## 8.LEGNet: A Lightweight Edge-Gaussian Network for Low-Quality Remote  Sensing Image Object Detection（2025 ICCV）
+### ①contributions
+1、作者介绍了新颖的EGA模块，该模块将传统的图像处理算子（方向感知夏尔边缘增强和基于高斯先验的特征建模）与可学习的深度特征相结合，专门解决低质量RS图像中的特征退化问题；2、提出轻量级网络 LEGNet，旨在高效地改进对具有挑战性的对象（如低质量、模糊或遮挡）的检测，同时保持适合边缘部署的计算效率；3、在五个具有挑战性的RSOD基准上进行的广泛实验表明，LEGNet 建立了新的SOTA性能。
+### ②method
+<img width="1150" height="596" alt="image" src="https://github.com/user-attachments/assets/877b6d1c-6751-44ea-b317-a1344154d8c7" />
+
+### ③https://github.com/AeroVILab-AHU/LEGNet
+## 9.Self-Prompting Analogical Reasoning for UAV Object Detection(2025 AAAI)
+### ①contributions
+1、提出了一种基于视觉-语言模型的类比推理框架：该框架包含三个步骤：演绎、映射和推理，分别对应基于语言特征的图构建、图边构建和图推理。通过这种方式，更容易检测到的对象可以支持小而难以检测对象的检测；2、提出了一种自提示方法：为每张图像生成上下文感知提示和目标性提示分数图，隐式提取上下文信息并增强特征表示；3、通过类别级和像素级图节点实现类比推理：增强了直接通过视觉特征难以检测到的对象的特征，使其能够通过关系推理成功检测。
+### ②method
+<img width="1184" height="628" alt="image" src="https://github.com/user-attachments/assets/ded2e048-f46c-4a01-b7a5-80a526aacc36" />
+
+### ③https://github.com/lnxwow/Analogical-Reasoning
+## 10.RemDet: Rethinking Efficient Model Design for UAV Object Detection（2025 AAAI）
+### ①contributions
+1、作者重新思考了无人机检测器的设计，摒弃了复杂的手工设计。通过探索信息损失，使用最简单的结构有效地增强了小物体检测；
+2、遵循减少信息损失的原则，研究发现，仅高维表示就可以减少信息损失并提高小物体的性能。并通过实证结果、理论探索和可视化表示验证了分析；
+3、为解决复杂的实时要求，其中复杂设计和多特征融合在提高准确性方面不切实际，研究表明，乘法而非前馈网络是一种成本效益高且更简单的高维表示方法。基于这一见解的设计减少了信息损失，同时保持了低延迟。
+### ②method
+<img width="1161" height="565" alt="image" src="https://github.com/user-attachments/assets/359a5ec1-7bc6-4abd-9c35-42a85ae24c49" />
+
+### ③https://github.com/HZAI-ZJNU/RemDet
+
+#
+# Dataset
+### Stanford Drone dataset 行人、自行车、滑板、汽车等多目标行为理解与轨迹预测——多目标跟踪 + 轨迹预测
+### UAV123 dataset 移动物体跟踪（车辆、人、动物）——视觉跟踪
+### Car Parking Lot dataset (CARPK) dataset 停车场汽车计数与检测——目标检测 + 计数
+### UAV-ROD dataset 城市场景多类物体检测（人、车、建筑等）——目标检测
+### Okutama-Action dataset 行为识别（跑步、携物、打电话等）——行为检测 + 动作识别
+### UAV Detection and Tracking (UAVDT) dataset 车辆检测与跟踪、天气与光照变化鲁棒性——检测 + 跟踪
+### DAC-SDC dataset 智慧城市中的自动驾驶检测竞赛数据——检测 + 交通目标识别
+### Moving Object Recognition (MOR-UAV) dataset 移动物体识别（人、车、船等）——检测 + 分类
+### DroneVehicle dataset 高密度交通目标检测与再识别——检测 + Re-ID + 跟踪
+### AU-AIR dataset 多模态无人机检测（RGB+IMU+GPS）——检测 + 多模态感知
+### UVSD dataset 视频监控检测与目标分割——检测 + 视频分割
+### AerialMind 首次构建无人机指代多目标跟踪大规模基准——多目标跟踪（AAAI 2026 Oral）
+### HazyDet 带有场景深度的雾天无人机目标检测开源基准——检测（2024）
+### AirSim360  无人机视角下的全景数据集及仿真平台（还未开源）
