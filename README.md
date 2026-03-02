@@ -101,3 +101,4 @@ Vmamba
 ### AerialMind 首次构建无人机指代多目标跟踪大规模基准——多目标跟踪（AAAI 2026 Oral）
 ### HazyDet 带有场景深度的雾天无人机目标检测开源基准——检测（2024）
 ### AirSim360  无人机视角下的全景数据集及仿真平台（还未开源）
+### UTUAV: A Drone Dataset for Urban Traffic Analysis 汽车、摩托车和大型车辆——检测（2025）
