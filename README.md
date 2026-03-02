@@ -102,3 +102,4 @@ Vmamba
 ### HazyDet 带有场景深度的雾天无人机目标检测开源基准——检测（2024）
 ### AirSim360  无人机视角下的全景数据集及仿真平台（还未开源）
 ### UTUAV: A Drone Dataset for Urban Traffic Analysis 汽车、摩托车和大型车辆——检测（2025）
+### AWOD-datasets 恶劣天气目标检测数据集——检测（2025）
