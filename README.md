@@ -103,3 +103,4 @@ Vmamba
 ### AirSim360  无人机视角下的全景数据集及仿真平台（还未开源）
 ### UTUAV: A Drone Dataset for Urban Traffic Analysis 汽车、摩托车和大型车辆——检测（2025）
 ### AWOD-datasets 恶劣天气目标检测数据集——检测（2025）
+### UEVAVD：国防科技大学，无人机视角下的主动目标检测问题——包含五种车辆目标在城市和林地地形中的多视角图像（2025）
