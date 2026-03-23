@@ -104,3 +104,4 @@ Vmamba
 ### UTUAV: A Drone Dataset for Urban Traffic Analysis 汽车、摩托车和大型车辆——检测（2025）
 ### AWOD-datasets 恶劣天气目标检测数据集——检测（2025）
 ### UEVAVD：国防科技大学，无人机视角下的主动目标检测问题——包含五种车辆目标在城市和林地地形中的多视角图像（2025）
+### CODrone: A Comprehensive Oriented Object Detection benchmark for UAV——检测（2025）
